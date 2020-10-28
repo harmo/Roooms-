@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  grid:
+    restart: always
+    build: .
+    command: /bin/sh
