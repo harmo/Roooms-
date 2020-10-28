@@ -113,7 +113,7 @@ class Cell:
         self._icon = CellType.hammer
 
     def hide(self):
-        self._visible = True
+        self._visible = False
 
     def show(self):
         self._visible = True
@@ -122,4 +122,4 @@ class Cell:
         self._visited = True
 
     def set_as_unvisited(self):
-        self._visited = True
+        self._visited = False

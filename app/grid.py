@@ -32,7 +32,7 @@ class Grid:
     def __init__(self, stdscr, difficulty):
         self._stdscr = stdscr
         self._difficulty = difficulty
-        self.debug('           ' + self._difficulty)
+        self.debug('     Difficulty      ' + self._difficulty)
 
         self.init_matrix()
 
@@ -47,7 +47,7 @@ class Grid:
 
         self.put_hammer()
 
-        # self.hide_rooms()
+        self.hide_rooms()
 
     def debug(self, what):
         self._stdscr.addstr(str(what))

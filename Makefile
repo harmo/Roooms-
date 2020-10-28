@@ -62,3 +62,7 @@ test:
 watch-test:
 	## Laucnh unit tests and track changes for reload
 	docker-compose run --rm app watchmedo shell-command -R -W -p '*.py' -c 'pytest .'
+
+play:
+	## Launch game directly
+	python -m app

@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  grid:
+  app:
     restart: always
     build: .
-    command: /bin/sh
+    command: python -m app.__main__
